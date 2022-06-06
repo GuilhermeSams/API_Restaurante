@@ -23,3 +23,9 @@ Product.create!( name: "Tacacá", description: "Com uma mistura de itens intenso
 Product.create!( name: "Maniçoba", description: "Na comida são usadas folhas de mandioca, que são moídas e cozidas por cerca de uma semana. Esse cuidado é importante para tirar uma substância venenosa chamada de ácido cianídrico, que existe no alimento.", price: "25", category_id: 3)
 Product.create!( name: "Pirarucu de Casaca", description: "Além do Pirarucu, esse prato leva ainda farinha de mandioca, banana da terra bem madura, azeite, tomate, pimentão, cebola, cheiro verde, temperos, manteiga e colorau.", price: "35", category_id: 3)
 Product.create!( name: "Açaí", description: "Apesar de ser consumudo no Brasil todo, o açaí é um dos principais pratos típicos como sobremesa, podendo conter vários ingredientes que deixam bem saboroso", price: "6", category_id: 3)
+
+User.create!( email: "guilhermeps3670@gmail.com", password: "123456", name: "Guilherme")
+User.create!( email: "guilhermequiara@gmail.com", password: "123456", name: "Yan")
+
+Favorite.create!( user_favorite_product: "Acarajé", user_id: 1, product_id: 1 )
+Favorite.create!( user_favorite_product: "Caranguejo", user_id: 2, product_id: 3 )
