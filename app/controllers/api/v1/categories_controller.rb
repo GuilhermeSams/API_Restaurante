@@ -37,7 +37,7 @@ class Api::V1::CategoriesController < ApplicationController
 
     def category_filter
         category = Category.find(params[:id])
-        categories = category.categories
+        categories = category.products
         render json: categories
     rescue StandardError => e
         render json: e, status: :bad_request

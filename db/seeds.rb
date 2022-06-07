@@ -29,3 +29,5 @@ User.create!( email: "guilhermequiara@gmail.com", password: "123456", name: "Yan
 
 Favorite.create!( user_favorite_product: "Acarajé", user_id: 1, product_id: 1 )
 Favorite.create!( user_favorite_product: "Caranguejo", user_id: 2, product_id: 3 )
+
+User.find_by(id:1).photo.attached(io: File.open, filename:)

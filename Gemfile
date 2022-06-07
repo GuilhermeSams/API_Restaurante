@@ -48,3 +48,6 @@ gem 'net-smtp'
 gem 'devise'
 
 gem 'simple_token_authentication'
+
+#Filtra os Json's enviadores pelas controllers
+gem 'active_model_serializers'

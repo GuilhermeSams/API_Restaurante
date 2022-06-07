@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
       scope 'users' do
         get 'login', to: 'users#login'
+        get 'logout', to: 'users#logout'
       end
 
       scope 'favorites' do
