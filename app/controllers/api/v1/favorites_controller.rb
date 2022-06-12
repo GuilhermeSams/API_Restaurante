@@ -1,6 +1,11 @@
 class Api::V1::FavoritesController < ApplicationController
     acts_as_token_authentication_handler_for User
 
+    def index
+        favorite = Favorite.all
+        render json: favorite, status: :ok
+    end
+
     def create
         favorite = Favorite.new(favorites_params)
         favorite.save!
@@ -9,6 +14,7 @@ class Api::V1::FavoritesController < ApplicationController
         render json: e, status: :unprocessable_entity
     end
     
+
     def delete
         favorite = Favorite.find(params[:id])
         favorite.destroy!

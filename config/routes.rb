@@ -12,6 +12,7 @@ Rails.application.routes.draw do
       scope 'favorites' do
         post 'create', to: 'favorites#create'
         delete 'delete/:id', to: 'favorites#delete'
+        get 'index', to: 'favorites#index'
       end
 
 
